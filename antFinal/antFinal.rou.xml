@@ -1,0 +1,64 @@
+<routes>
+    <vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="100.0" sigma="0.0" />
+    <vType accel="3.0" decel="6.0" id="CarA" length="5.0" minGap="2.5" maxSpeed="50.0" sigma="0.5" />
+    <vType accel="2.0" decel="6.0" id="CarB" length="7.5" minGap="2.5" maxSpeed="50.0" sigma="0.5" />
+    <vType accel="1.0" decel="5.0" id="CarC" length="5.0" minGap="2.5" maxSpeed="40.0" sigma="0.5" />
+    <vType accel="1.0" decel="5.0" id="CarD" length="7.5" minGap="2.5" maxSpeed="30.0" sigma="0.5" />
+    
+    <route id="route01" edges="1to5 5to2"/>
+    <route id="route02" edges="2to5 5to3"/>
+    <route id="route03" edges="3to5 5to1"/>
+    <route id="route04" edges="4to5 5to2"/>
+    
+    <!--<vehicle depart="1" id="veh0" route="route0" type="Car" />-->
+    <!-- DEPART es el tiempo de partida-->
+    <vehicle depart="10" id="veh0" route="route01" type="CarA" color="1,0,0" /> 
+    <vehicle depart="10" id="veh1" route="route02" type="CarA" />
+    <vehicle depart="10" id="veh2" route="route03" type="CarA" />
+    <vehicle depart="10" id="veh3" route="route04" type="CarA" />
+    <vehicle depart="10" id="veh4" route="route01" type="CarA" />
+    <vehicle depart="10" id="veh5" route="route02" type="CarA" />
+    <vehicle depart="10" id="veh6" route="route03" type="CarA" />
+
+    <vehicle depart="10" id="veh20" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh21" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh22" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh23" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh24" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh34" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh35" route="route04" type="CarB" />
+    
+    <vehicle depart="10" id="veh8" route="route01" type="CarB" />
+    
+    <vehicle depart="10" id="veh9" route="route03" type="CarB" />
+    <vehicle depart="10" id="veh40" route="route03" type="CarB" />
+
+    <vehicle depart="10" id="veh10" route="route02" type="CarB" />
+
+    <vehicle depart="10" id="veh25" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh26" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh27" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh28" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh29" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh30" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh31" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh32" route="route04" type="CarB" />
+
+
+    <vehicle depart="10" id="veh12" route="route01" type="CarB" color="1,0,0" /> 
+    <vehicle depart="10" id="veh13" route="route02" type="CarB" />
+    <vehicle depart="10" id="veh14" route="route03" type="CarC" />
+    <vehicle depart="10" id="veh41" route="route03" type="CarB" />
+    <vehicle depart="10" id="veh42" route="route03" type="CarB" />
+
+    <vehicle depart="10" id="veh15" route="route04" type="CarC" />
+    <vehicle depart="10" id="veh36" route="route04" type="CarB" />
+    <vehicle depart="10" id="veh37" route="route04" type="CarB" />
+
+    <!--<vehicle depart="10" id="veh16" route="route01" type="CarC" />-->
+    <vehicle depart="10" id="veh17" route="route02" type="CarC" />
+    <vehicle depart="10" id="veh18" route="route03" type="CarC" />
+    <vehicle depart="10" id="veh46" route="route03" type="CarB" />
+    <vehicle depart="10" id="veh47" route="route03" type="CarB" />
+    <vehicle depart="10" id="veh48" route="route03" type="CarB" />
+</routes>
